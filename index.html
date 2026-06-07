@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guida Installazione - Campus Automazione</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --bg-color: #f8f9fa;
+            --text-color: #333;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+
+        header p {
+            margin-top: 0.5rem;
+            opacity: 0.8;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .installation-card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .installation-card h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+
+        .step-list {
+            list-style-type: none;
+            padding: 0;
+            counter-reset: step-counter;
+        }
+
+        .step-list li {
+            position: relative;
+            padding-left: 3.5rem;
+            margin-bottom: 1.5rem;
+            background: #fdfdfd;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            padding-right: 1rem;
+            border-left: 4px solid var(--accent-color);
+            border-radius: 0 4px 4px 0;
+        }
+
+        .step-list li::before {
+            counter-increment: step-counter;
+            content: counter(step-counter);
+            position: absolute;
+            left: -20px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: var(--accent-color);
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: bold;
+            word-break: break-all;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .important-note {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 1rem;
+            margin-top: 0.5rem;
+            border-radius: 4px;
+            font-size: 0.95rem;
+        }
+
+        .code-snippet {
+            background-color: #eee;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: monospace;
+            color: #d63031;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Campus Automazione</h1>
+        <p>Guida all'installazione del materiale per le attività</p>
+    </header>
+
+    <main>
+        <div class="installation-card">
+            <h2>🛠️ Create a Factory</h2>
+            <p>Segui questi passaggi per configurare correttamente l'ambiente di lavoro sul tuo PC:</p>
+
+            <ol class="step-list">
+                <li>
+                    <strong>Accesso al PC:</strong> Entra nel computer utilizzando le tue credenziali scolastiche.
+                </li>
+                <li>
+                    <strong>Scarica Prism Launcher:</strong> Clicca sul link sottostante per scaricare la versione "Portable" del launcher.
+                    <br>
+                    <a href="https://github.com/PrismLauncher/PrismLauncher/releases/download/11.0.2/PrismLauncher-Windows-MinGW-w64-Portable-11.0.2.zip" target="_blank">📥 Scarica Prism Launcher (.zip)</a>
+                </li>
+                <li>
+                    <strong>Estrai la cartella:</strong> Estrai il file <code>.zip</code> appena scaricato in un posto a tua scelta (suggerimento: lascia la cartella predefinita).
+                </li>
+                <li>
+                    <strong>Crea il collegamento:</strong> Apri la cartella estratta. Trascina l'applicazione <strong>"prismlauncher"</strong> sul desktop tenendo premuto il tasto <kbd>ALT</kbd> (in questo modo verrà creato un collegamento).
+                </li>
+                <li>
+                    <strong>Rinomina il collegamento:</strong> Clicca col tasto destro sul collegamento appena creato sul desktop e rinominalo in <strong>"Create a Factory"</strong>.
+                </li>
+                <li>
+                    <strong>Configurazione iniziale:</strong> Avvia il collegamento. Al primo avvio:
+                    <ul>
+                        <li>Seleziona la lingua <strong>"Italiano"</strong>.</li>
+                        <li>Seleziona il <strong>Dark Theme</strong>.</li>
+                        <li>Premi <strong>Fine</strong>.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Accesso all'account:</strong> Clicca su <strong>"Account"</strong> in alto a destra, poi su "Gestisci account" e fai l'accesso con l'account Microsoft:
+                    <span class="code-snippet">rainerum@delugan.net</span> (uguale per tutti).
+                    <div class="important-note">
+                        <strong>Nota bene:</strong> L'account non ha una password! L'accesso verrà accettato direttamente dal professore quando gli comunicherai il codice che ti apparirà sullo schermo.
+                    </div>
+                </li>
+                <li>
+                    <strong>Chiudi le impostazioni:</strong> Una volta effettuato l'accesso, chiudi la finestra di gestione account.
+                </li>
+                <li>
+                    <strong>Scarica l'istanza del Campus:</strong> Scarica il pacchetto Minecraft preparato per il corso cliccando sul link qui sotto:
+                    <br>
+                    <a href="http://mcni.it/campus/minecraft" target="_blank">📥 mcni.it/campus/minecraft</a>
+                </li>
+                <li>
+                    <strong>Importa l'istanza:</strong> Prendi il file dell'istanza appena scaricato e <strong>trascinalo</strong> direttamente dentro la finestra aperta di Prism Launcher.
+                </li>
+                <li>
+                    <strong>Avvia il gioco:</strong> Fai doppio click sull'istanza appena importata per iniziare!
+                </li>
+            </ol>
+        </div>
+    </main>
+
+</body>
+</html>
